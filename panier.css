@@ -1,0 +1,225 @@
+
+#quantite {
+
+    margin-left: 56.5%;
+
+    font-weight: 550;
+    
+    font-size: 120%;
+}
+
+#prix-total-article {
+
+    margin-left: 86.5%;
+
+    font-weight: 550;
+    
+    font-size: 120%;
+}
+
+.prix-produit {
+
+  margin-left: 16%;
+  margin-top: 0%;
+  font-weight: 700;
+  margin-top: 10%;
+
+}
+
+.titre-produit {
+
+    font-size: 20px;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    font-weight: 500;
+
+}
+.image-produits {
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 10px;
+
+}
+#en-tete {
+    background-color: #a8e0b9;
+}
+
+th{
+    background-color: #a8e0b9;
+}
+table {
+
+    width: 100%;
+
+    margin: 20px auto;
+
+    border-collapse: collapse;
+    
+
+}
+
+tr {
+    border-top: black;
+    
+}
+th, td {
+
+    padding: 29px;
+
+    text-align: left;
+
+    /* border-bottom: 1px solid #ddd; */
+
+    background-size: contain; /* Ajuste l'image à la taille de la cellule */
+
+    background-repeat: no-repeat; /* Pas de répétition */
+
+    background-position: center; /* Image centrée */
+
+}
+tr:hover {
+
+    background-color: #a8e0b9;
+
+}
+
+.quantite {
+
+    border-color: #a8e0b9;
+
+    background: transparent;
+
+    border: none; 
+
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    font-size: 100%;
+}
+.prix-par-nombre-article {
+
+padding-left: -15%;
+
+font-weight: 700;
+
+font-size: 100%;
+    
+}
+.survole {
+
+    filter: brightness(0.85); /* Fonce la couleur de 15% */
+    border-top: solid 1px black;
+}
+
+#tfoot {
+
+    border-width: 1px; 
+    
+    border-bottom: 0px; 
+    
+    pointer-events: none;
+    
+    text-align:right; 
+
+    font-weight: 700;
+    
+    font-weight: 700;
+
+}
+
+@media (max-width: 768px) {
+    /* Adaptations pour les écrans de tablette */
+    #quantite, #prix-total-article {
+        margin-left: 5%; /* Ajuste les marges pour être plus flexible */
+        font-size: 100%; /* Réduit la taille de police pour les petits écrans */
+    }
+
+    .prix-produit, .titre-produit {
+        font-size: 16px; /* Réduit la taille pour les petits écrans */
+    }
+
+    .image-produits {
+        width: 100px; /* Réduit la taille des images */
+        height: 100px;
+    }
+
+    .quantite {
+        width: 60%; /* Ajuste la largeur de l'input pour les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adaptations pour les petits écrans de mobile */
+    h1, h2 {
+        font-size: 1.5em; /* Réduit les titres */
+    }
+
+    .prix-produit, .prix-par-nombre-article {
+        font-size: 14px; /* Réduit la taille de police pour les prix */
+    }
+
+    table {
+        font-size: 14px; /* Réduit la taille de la police dans la table */
+    }
+
+    #footer {
+        text-align: center; /* Centre le texte du footer sur mobile */
+    }
+
+    .reseaux-sociaux {
+        display: flex;
+        justify-content: center; /* Centre les icônes des réseaux sociaux */
+    }
+}
+@media (max-width: 768px) {
+    #quantite, #prix-total-article {
+        margin-left: 5%;
+        font-size: 100%;
+    }
+
+    .prix-produit, .titre-produit {
+        font-size: 16px;
+    }
+
+    .image-produits {
+        width: 100px;  /* Taille réduite pour les images */
+        height: 100px; /* Taille réduite pour les images */
+    }
+
+    .quantite {
+        width: 60%;  /* Largeur ajustée pour les champs de quantité */
+    }
+}
+
+/* Styles supplémentaires pour les très petits écrans (comme les iPhones) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em; /* Réduction de la taille de police */
+    }
+
+    .prix-produit, .prix-par-nombre-article {
+        font-size: 14px; /* Réduction de la taille de police */
+    }
+
+    table {
+        font-size: 14px; /* Réduction de la taille de police de la table */
+    }
+
+    #footer {
+        text-align: center; /* Centrage du footer */
+    }
+
+    .reseaux-sociaux {
+        display: flex;
+        justify-content: center; /* Centrage des icônes de réseaux sociaux */
+    }
+
+    .quantite {
+        font-size: 12px; /* Taille de police pour les champs de quantité */
+    }
+}
